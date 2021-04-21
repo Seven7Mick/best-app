@@ -1,0 +1,25 @@
+.link_blue-arrow {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0063DD;
+  
+}
+
+.link_blue-arrow::after {
+  content: '';
+  width: 67px;
+  margin-left: 15px;
+  background-image: url(../../img/links/arrow-right-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link_blue-arrow:hover {
+  transform: scale(1.1);
+}
+
+.link_blue-arrow:hover.link_blue-arrow::after {
+  transform: scale(1.1);
+}

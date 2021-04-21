@@ -1,0 +1,17 @@
+@import url(./null.css);
+@import url(./fonts.css);
+@import url(./genegal.css);
+@import url(./buttons/buttons.css);
+@import url(./links/links.css);
+
+@import url(./pages/main-page.css);
+@import url(./header/header.css);
+@import url(./pages/feature-page.css);
+@import url(./pages/about-page.css);
+@import url(./pages/works-page.css);
+@import url(./pages/pricing-page.css);
+@import url(./pages/slider-page.css);
+@import url(./slider/slick.css);
+@import url(./slider/slider.css);
+@import url(./pages/news-page.css);
+@import url(./footer/footer.css);

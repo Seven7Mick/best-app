@@ -1,0 +1,38 @@
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider-page__slider-nav .slick-dots {
+  display: flex;
+}
+
+.slider-page__slider-nav .slick-dots li {
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  background: #F5FCFD;
+  border: 1.6px solid #0063DD;
+  box-sizing: border-box;
+  border-radius: 32px;
+}
+
+.slider-page__slider-nav .slick-dots li.slick-active {
+  width: 38px;
+  height: 12px;
+  background: #0063DD;
+  border-radius: 32px;
+  transition: width 1s;
+}
+
+.slider-page__slider-nav .slick-dots button {
+  font-size: 0;
+}

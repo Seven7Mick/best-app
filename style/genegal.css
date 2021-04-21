@@ -1,0 +1,9 @@
+body{
+  font-family: 'Quicksand';
+}
+
+.container{
+  max-width: 1166px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

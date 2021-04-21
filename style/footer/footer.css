@@ -1,0 +1,37 @@
+.tooter {}
+
+/* trial */
+
+.tooter__trial {
+  padding: 133px 0 113px 0;
+  background: #F5FCFD;
+}
+
+.trial__wrapper {
+  max-width: 754px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trial__text {
+  max-width: 336px;
+  margin-right: 15px;
+}
+
+.trial__text-title {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.trial__text-discription {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}

@@ -1,0 +1,75 @@
+.button {
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button_type-white {
+  border: 2px solid #0F7BFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #FFFFFF;
+  color: #0F7BFF;
+  padding: 15px 46px;
+}
+
+.button_type-white:hover,
+.button_type-white:focus {
+  border: 2px solid #0F7BFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #0F7BFF;
+  color: #FFFFFF;
+}
+
+.button_scroll-down{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #0063DD;
+  background-image: url(../../img/features/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button_scroll-down::before{
+  position: absolute;
+  content: '';
+  top: 35px;
+  left: 35px;
+  width: 57px;
+  height: 57px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(0, 99, 221, 0.23);
+  transition: all .7s ease-in-out;
+}
+
+.button_scroll-down:hover.button_scroll-down::before{
+  transform: scale(2) translate(-25%, -25%);
+}
+
+.button_type-blue{
+  background: #0F7BFF;
+  border-radius: 25px;
+  padding: 14px 68px 14px 68px;
+}
+
+.button_type-blue-label {
+  display: flex;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.button_type-blue-label::after{
+  content: '';
+  margin-left: 13px;
+  width: 30px;
+  background: url('../../img/buttons/arrow-right.svg') no-repeat center;
+}

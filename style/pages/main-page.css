@@ -1,0 +1,43 @@
+.main-page {
+  height: 112%;
+  background: url('../../img/main-page/BG.svg') no-repeat left/cover;
+  box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
+}
+
+.product {
+  max-width: 655px;
+  margin: 0 auto;
+}
+
+.product__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.product__discription {
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #929292;
+  margin-bottom: 33px;
+}
+
+.product__buttons-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 362px;
+  margin: 0 auto;
+  margin-bottom: 108px;
+}
+
+.devices{
+  display: block;
+  width: 100%;
+  max-width: 804px;
+  margin: 0 auto;
+  object-fit: cover;
+}

@@ -1,0 +1,116 @@
+.about-page {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+/* easy messaging */
+
+.about-page__easy-messaging {
+  margin-bottom: 233px;
+}
+
+.easy-messaging {
+  display: flex;
+  align-items: center;
+}
+
+.easy-messaging__picture {
+  position: relative;
+}
+
+.easy-messaging__picture::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  z-index: 1;
+  width: 390px;
+  height: 483px;
+  background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
+  border-radius: 40px;
+  transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+}
+
+.easy-messaging__picture-img {
+  position: relative;
+  max-width: 558px;
+  margin-right: 128px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.easy-messaging__content {
+  max-width: 476px;
+}
+
+.easy-messaging__content-title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.easy-messaging__content-discription {
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+/* keep in touch */
+
+/* .about-page__keep-in-touch {} */
+
+.keep-in-touch {
+  display: flex;
+  align-items: center;
+}
+
+.keep-in-touch__picture {
+  position: relative;
+  order: 2;
+}
+
+.keep-in-touch__picture::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 1;
+  width: 390px;
+  height: 483px;
+  background: linear-gradient(272deg, #0F7BFF 4.58%, #0063DD 78.9%);
+  border-radius: 40px;
+  transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+}
+
+.keep-in-touch__picture-img {
+  position: relative;
+  max-width: 362px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.keep-in-touch__content {
+  max-width: 543px;
+  margin-right: 143px;
+  order: 1;
+}
+
+.keep-in-touch__content-title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.keep-in-touch__content-discription {
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
