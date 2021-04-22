@@ -27,11 +27,12 @@
 
 .button_scroll-down{
   position: relative;
+  z-index: 3;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background-color: #0063DD;
-  background-image: url(../../img/features/arrow-down.svg);
+  background-image: url(../../img/buttons/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -39,6 +40,7 @@
 .button_scroll-down::before{
   position: absolute;
   content: '';
+  z-index: 2;
   top: 35px;
   left: 35px;
   width: 57px;
@@ -72,4 +74,33 @@
   margin-left: 13px;
   width: 30px;
   background: url('../../img/buttons/arrow-right.svg') no-repeat center;
+}
+
+.button_scroll-up{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-image: url(../../img/buttons/arrow-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button_scroll-up::before{
+  position: absolute;
+  content: '';
+  top: 35px;
+  left: 35px;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(0, 99, 221, 0.37);
+  opacity: 0;
+  transition: opacity .7s ease-in-out;
+}
+
+.button_scroll-up:hover.button_scroll-up::before{
+  opacity: 1;
 }
