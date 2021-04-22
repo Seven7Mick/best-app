@@ -65,3 +65,10 @@
   top: 25%;
   right: 5%;
 }
+
+@media screen and (max-width: 1440px) {
+  .footer__btn{
+    top: -50%;
+    transform: translateY(50%);
+  }
+}
