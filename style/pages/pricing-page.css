@@ -14,18 +14,10 @@
 
 .plans__plan-title {
   margin-bottom: 30px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 40px;
-  color: #000000;
 }
 
 .plans__plan-discription {
   margin-bottom: 40px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000000;
 }
 
 .plans__plan-toggle {
@@ -51,6 +43,10 @@
   border-radius: 5px;
 }
 
+.plans__card:not(:last-child) {
+  margin-right: 15px;
+}
+
 .plans__card-img {
   max-width: 114px;
   margin-bottom: 20px;
@@ -62,8 +58,6 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #000000;
-  
 }
 
 .plans__card-title::after {
@@ -78,10 +72,9 @@
 .plans__card-discription {
   margin-bottom: 26px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: var(--font-size-content);
   line-height: 184%;
   text-align: center;
-  color: #000000;
 }
 
 .plans__card-price {
@@ -92,4 +85,31 @@
   color: #0F7BFF;
 }
 
-/* .plans__card-button {} */
+@media screen and (max-width:1050px) {
+  .pricing-page {
+    padding: 70px 0;
+  }
+  .pricing-page__plans {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .plans__plan {
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .plans__plan-toggle {
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .plans__card{
+    flex: 0 1 380px;
+  }
+  .plans__card:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

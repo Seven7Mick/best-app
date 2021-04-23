@@ -1,31 +1,27 @@
 .button {
   font-weight: bold;
   border-radius: 25px;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: var(--font-size-content);
+  line-height: 118%;
 }
 
 .button_type-white {
   border: 2px solid #0F7BFF;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: var(--font-size-content);
+  line-height: 118%;
   background-color: #FFFFFF;
   color: #0F7BFF;
   padding: 15px 46px;
 }
 
-.button_type-white:hover,
-.button_type-white:focus {
+.button_type-white:hover, .button_type-white:focus {
   border: 2px solid #0F7BFF;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
   background-color: #0F7BFF;
   color: #FFFFFF;
 }
 
-.button_scroll-down{
+.button_scroll-down {
   position: relative;
   z-index: 3;
   width: 70px;
@@ -37,7 +33,7 @@
   background-position: center;
 }
 
-.button_scroll-down::before{
+.button_scroll-down::before {
   position: absolute;
   content: '';
   z-index: 2;
@@ -51,11 +47,11 @@
   transition: all .7s ease-in-out;
 }
 
-.button_scroll-down:hover.button_scroll-down::before{
+.button_scroll-down:hover.button_scroll-down::before {
   transform: scale(2) translate(-25%, -25%);
 }
 
-.button_type-blue{
+.button_type-blue {
   background: #0F7BFF;
   border-radius: 25px;
   padding: 14px 68px 14px 68px;
@@ -64,19 +60,23 @@
 .button_type-blue-label {
   display: flex;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: var(--font-size-content);
+  line-height: 118%;
   color: #FFFFFF;
 }
 
-.button_type-blue-label::after{
+.button_type-blue-label::after {
   content: '';
   margin-left: 13px;
   width: 30px;
   background: url('../../img/buttons/arrow-right.svg') no-repeat center;
 }
 
-.button_scroll-up{
+.button_type-blue:hover, .button_type-blue:focus {
+  box-shadow: 3px 3px 3px #37383a67;
+}
+
+.button_scroll-up {
   position: relative;
   width: 70px;
   height: 70px;
@@ -87,7 +87,7 @@
   background-position: center;
 }
 
-.button_scroll-up::before{
+.button_scroll-up::before {
   position: absolute;
   content: '';
   top: 35px;
@@ -101,6 +101,6 @@
   transition: opacity .7s ease-in-out;
 }
 
-.button_scroll-up:hover.button_scroll-up::before{
+.button_scroll-up:hover.button_scroll-up::before {
   opacity: 1;
 }

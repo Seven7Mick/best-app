@@ -1,0 +1,11 @@
+.title_main {
+  font-weight: 500;
+  font-size: var(--font-size-title);
+  line-height: 125%;
+}
+
+.text_content {
+  font-weight: 300;
+  font-size: var(--font-size-content);
+  line-height: 150%;
+}

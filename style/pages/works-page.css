@@ -8,20 +8,14 @@
 }
 
 .title-field__title {
-  font-size: 32px;
-  line-height: 37px;
   text-align: center;
-  color: #000000;
+  margin-bottom: 25px;
 }
 
 .title-field__discription {
   margin: 0 auto;
   max-width: 722px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
   text-align: center;
-  color: #000000;
 }
 
 .work-page__path {
@@ -59,15 +53,10 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
 }
 
 .path__item-discription {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
   text-align: center;
-  color: #000000;
 }
 
 .work-page__path-road{
@@ -77,4 +66,33 @@
   width: 70%;
   z-index: 1;
   stroke-dasharray: 10;
+}
+
+@media screen and (max-width:1050px) {
+  .work-page {
+    padding: 70px 0
+  }
+}
+
+@media screen and (max-width:590px) {
+  .work-page__path-road{
+    display: none;
+  }
+  .work-page__path{
+    flex-direction: column;
+    align-items: center;
+  }
+  .path__item{
+    margin-right: 0;
+  }
+
+  .path__item:not(:last-child){
+    margin-bottom: 40px;
+  }
+  .path__item-picture{
+    margin-bottom: 20px;
+  }
+  .path__item-title{
+    margin-bottom: 10px;
+  }
 }

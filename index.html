@@ -13,7 +13,7 @@
   <!-- Main page -->
   <section class="main-page">
     <!-- Header -->
-    <header class="header">
+    <header class="main-page__header header">
       <a class="header__logo" href="/">
         AppSon
       </a>
@@ -23,13 +23,47 @@
         <a class="navigation__link" href="#">pricing</a>
         <a class="navigation__link" href="#">pages</a>
       </nav>
+      <!-- menu-burger -->
+      <div class="header__menu-burger">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="burger__top-line"
+            d="M38.9487 19H11.0513C9.91812 19 9 18.1048 9 17C9 15.8952 9.91812 15 11.0513 15H38.9487C40.0819 15 41 15.8952 41 17C41 18.1049 40.0819 19 38.9487 19Z"
+            fill="#434343" />
+
+          <g class="burger__middle-line">
+            <path
+              d="M30.6 27H11.4C10.0742 27 9 26.1048 9 25C9 23.8952 10.0742 23 11.4 23H30.6C31.9257 23 33 23.8952 33 25C33 26.1048 31.9257 27 30.6 27Z"
+              fill="#434343" />
+            <path
+              d="M39.3334 27H36.6667C35.746 27 35 26.1048 35 25C35 23.8952 35.746 23 36.6667 23H39.3334C40.254 23 41 23.8952 41 25C41 26.1048 40.254 27 39.3334 27Z"
+              fill="#0F7BFF" />
+          </g>
+
+          <path class="burger__bottom-line"
+            d="M38.9487 35H11.0513C9.91812 35 9 34.1048 9 33C9 31.8952 9.91812 31 11.0513 31H38.9487C40.0819 31 41 31.8952 41 33C41 34.1048 40.0819 35 38.9487 35Z"
+            fill="#434343" />
+        </svg>
+      </div>
+
       <button class="header__sign-up button">
         sign up
       </button>
+
+      <!-- Mobile menu -->
+      <div class="header__mobile-wrapper">
+        <nav class="header__mobile-navigation">
+          <a class="mobile-navigation__link" href="#">home</a>
+          <a class="mobile-navigation__link" href="#">features</a>
+          <a class="mobile-navigation__link" href="#">pricing</a>
+          <a class="mobile-navigation__link" href="#">pages</a>
+          <a class="mobile-navigation__link" href="#">sign up</a>
+        </nav>
+      </div>
+
     </header>
 
     <!-- Best Desktop -->
-    <div class="product">
+    <div class="product container">
       <h1 class="product__title">Best Desktop App for You</h1>
       <p class="product__discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -40,7 +74,7 @@
       </div>
     </div>
 
-    <img class="devices" src="./img/main-page/Devices.png" alt="Devices">
+    <img class="devices" src="./img/pages/main-page/Devices.png" alt="Devices">
   </section>
   <!-- Features page -->
   <section class="features-page">
@@ -50,7 +84,15 @@
     <div class="features-cards container">
 
       <div class="features-cards__item">
-        <img class="features-cards__item-img features-cards__item-img_analysis" src="./img/features/analysis.svg"
+        <img class="features-cards__item-img features-cards__item-img_analysis"
+          src="./img/pages/features-page/analysis.svg" alt="analysis">
+        <h3 class="features-cards__item-name">Analysis</h3>
+        <p class="features-cards__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore</p>
+      </div>
+
+      <div class="features-cards__item">
+        <img class="features-cards__item-img features-cards__item-img_design" src="./img/pages/features-page/design.svg"
           alt="analysis">
         <h3 class="features-cards__item-name">Analysis</h3>
         <p class="features-cards__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -58,16 +100,8 @@
       </div>
 
       <div class="features-cards__item">
-        <img class="features-cards__item-img features-cards__item-img_design" src="./img/features/design.svg"
-          alt="analysis">
-        <h3 class="features-cards__item-name">Analysis</h3>
-        <p class="features-cards__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore</p>
-      </div>
-
-      <div class="features-cards__item">
-        <img class="features-cards__item-img features-cards__item-img_messaging" src="./img/features/messaging.svg"
-          alt="analysis">
+        <img class="features-cards__item-img features-cards__item-img_messaging"
+          src="./img/pages/features-page/messaging.svg" alt="analysis">
         <h3 class="features-cards__item-name">Analysis</h3>
         <p class="features-cards__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore</p>
@@ -75,18 +109,19 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About page -->
   <section class="about-page">
     <div class="container">
 
       <div class="about-page__easy-messaging easy-messaging">
         <picture class="easy-messaging__picture">
-          <img class="easy-messaging__picture-img" src="./img/about/easy-messaging.jpg" alt="easy-messaging">
+          <img class="easy-messaging__picture-img" src="./img/pages/about-page/easy-messaging.jpg" alt="easy-messaging">
         </picture>
 
         <div class="easy-messaging__content">
-          <h4 class="easy-messaging__content-title">Easy Messaging</h4>
-          <p class="easy-messaging__content-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+          <h4 class="easy-messaging__content-title title_main">Easy Messaging</h4>
+          <p class="easy-messaging__content-discription text_content">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
             adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="easy-messaging__content-read-more link_blue-arrow" href="#">Read More</a>
@@ -95,11 +130,12 @@
 
       <div class="about-page__keep-in-touch keep-in-touch">
         <picture class="keep-in-touch__picture">
-          <img class="keep-in-touch__picture-img" src="./img/about/keep-in-touch.jpg" alt="easy-messaging">
+          <img class="keep-in-touch__picture-img" src="./img/pages/about-page/keep-in-touch.jpg" alt="easy-messaging">
         </picture>
         <div class="keep-in-touch__content">
-          <h4 class="keep-in-touch__content-title">Easy Messaging</h4>
-          <p class="keep-in-touch__content-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+          <h4 class="keep-in-touch__content-title title_main">Keep In Touch</h4>
+          <p class="keep-in-touch__content-discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
             adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="keep-in-touch__content-read-more link_blue-arrow" href="#">Read More</a>
@@ -113,8 +149,9 @@
     <div class="container">
 
       <div class="work-page__title-field">
-        <h4 class="title-field__title">How Does It Works?</h4>
-        <p class="title-field__discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <h4 class="title-field__title title_main">How Does It Works?</h4>
+        <p class="title-field__discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+          do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
       </div>
 
@@ -122,31 +159,34 @@
 
         <div class="path__item">
           <picture class="path__item-picture">
-            <img class="path__item-img" src="./img/works/create-account.svg" alt="create">
+            <img class="path__item-img" src="./img/pages/works-page/create-account.svg" alt="create">
           </picture>
 
           <span class="path__item-title">Create An Account</span>
-          <p class="path__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+          <p class="path__item-discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod.
           </p>
         </div>
 
         <div class="path__item">
           <picture class="path__item-picture">
-            <img class="path__item-img" src="./img/works/email.svg" alt="create">
+            <img class="path__item-img" src="./img/pages/works-page/email.svg" alt="create">
           </picture>
 
           <span class="path__item-title">Confirm Email</span>
-          <p class="path__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+          <p class="path__item-discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod.
           </p>
         </div>
 
         <div class="path__item">
           <picture class="path__item-picture">
-            <img class="path__item-img" src="./img/works/result.svg" alt="create">
+            <img class="path__item-img" src="./img/pages/works-page/result.svg" alt="create">
           </picture>
 
           <span class="path__item-title">See Results</span>
-          <p class="path__item-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+          <p class="path__item-discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+            do eiusmod.
           </p>
         </div>
 
@@ -163,8 +203,9 @@
     <div class="pricing-page__plans container">
 
       <div class="plans__plan">
-        <h4 class="plans__plan-title">Pricing Plan</h4>
-        <p class="plans__plan-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <h4 class="plans__plan-title title_main">Pricing Plan</h4>
+        <p class="plans__plan-discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
 
         <div class="plans__plan-toggle">
@@ -174,7 +215,7 @@
       </div>
 
       <div class="plans__card">
-        <img class="plans__card-img" src="./img/pricing-page/premium.svg" alt="Premium">
+        <img class="plans__card-img" src="./img/pages/pricing-page/premium.svg" alt="Premium">
         <h5 class="plans__card-title">Premium</h5>
         <p class="plans__card-discription">2gb Hosting<br>10 Custom Domain<br>SSD Hosting<br>50 gb Bandwith<br>Free
           Support</p>
@@ -184,7 +225,7 @@
       </div>
 
       <div class="plans__card">
-        <img class="plans__card-img" src="./img/pricing-page/standart.svg" alt="Standart">
+        <img class="plans__card-img" src="./img/pages/pricing-page/standart.svg" alt="Standart">
         <h5 class="plans__card-title">Standart</h5>
         <p class="plans__card-discription">22gb Hosting<br>10 Custom Domain<br>SSD Hosting<br>50 gb Bandwith<br>Free
           Support</p>
@@ -200,7 +241,7 @@
 
     <!-- Slider -->
     <div class="slider-page__slider">
-      <h4 class="slider-page__title">Trusted By More Than 55M Peoples</h4>
+      <h4 class="slider-page__title title_main">Trusted By More Than 55M Peoples</h4>
       <div class="slider">
 
         <div class="slider__slide slide">
@@ -208,7 +249,7 @@
             <h5 class="slide__user-name">Raisa Moni</h5>
             <span class="slide__user-role">Envato Customer</span>
           </div>
-          <img class="slide__icon" src="./img/slider-page/twit.svg" alt="twitter">
+          <img class="slide__icon" src="./img/pages/slider-page/twit.svg" alt="twitter">
           <p class="slide__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore etamet.</p>
         </div>
@@ -218,7 +259,7 @@
             <h5 class="slide__user-name">Raisa Moni</h5>
             <span class="slide__user-role">Envato Customer</span>
           </div>
-          <img class="slide__icon" src="./img/slider-page/twit.svg" alt="twitter">
+          <img class="slide__icon" src="./img/pages/slider-page/twit.svg" alt="twitter">
           <p class="slide__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore etamet.</p>
         </div>
@@ -228,7 +269,7 @@
             <h5 class="slide__user-name">Raisa Moni</h5>
             <span class="slide__user-role">Envato Customer</span>
           </div>
-          <img class="slide__icon" src="./img/slider-page/twit.svg" alt="twitter">
+          <img class="slide__icon" src="./img/pages/slider-page/twit.svg" alt="twitter">
           <p class="slide__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore etamet.</p>
         </div>
@@ -238,7 +279,7 @@
             <h5 class="slide__user-name">Raisa Moni</h5>
             <span class="slide__user-role">Envato Customer</span>
           </div>
-          <img class="slide__icon" src="./img/slider-page/twit.svg" alt="twitter">
+          <img class="slide__icon" src="./img/pages/slider-page/twit.svg" alt="twitter">
           <p class="slide__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore etamet.</p>
         </div>
@@ -255,17 +296,19 @@
     <div class="container">
 
       <div class="news-page__title">
-        <h4 class="news-page__title-title">Latest News From Us</h4>
-        <p class="news-page__title-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <h4 class="news-page__title-title title_main">Latest News From Us</h4>
+        <p class="news-page__title-discription text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
       </div>
 
       <div class="news-page__news-field news-field">
 
         <article class="news-field__main-news">
-          <img class="main-news__img" src="./img/news-page/main-news.jpg" alt="Main">
+          <img class="main-news__img" src="./img/pages/news-page/main-news.jpg" alt="Main">
           <h5 class="main-news__title">The master bedroom suite is phenomenally spacious</h5>
-          <p class="main-news__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          <p class="main-news__content text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a class="main-news__continue link_blue-arrow" href="#">Continue Reading</a>
@@ -274,28 +317,31 @@
         <div class="news-field__others-news">
 
           <article class="other-new">
-            <img class="other-new__img" src="./img/news-page/new-1.jpg" alt="new-1">
+            <img class="other-new__img" src="./img/pages/news-page/new-1.jpg" alt="new-1">
             <div class="other-new__text">
               <h5 class="other-new__text-title">The master bedroom suite is phenomeny spacious</h5>
-              <p class="other-new__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              <p class="other-new__text-content text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do
                 eiusmod.</p>
             </div>
           </article>
 
           <article class="other-new">
-            <img class="other-new__img" src="./img/news-page/new-2.jpg" alt="new-2">
+            <img class="other-new__img" src="./img/pages/news-page/new-2.jpg" alt="new-2">
             <div class="other-new__text">
               <h5 class="other-new__text-title">The master bedroom suite is phenomeny spacious</h5>
-              <p class="other-new__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              <p class="other-new__text-content text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do
                 eiusmod.</p>
             </div>
           </article>
 
           <article class="other-new">
-            <img class="other-new__img" src="./img/news-page/new-3.jpg" alt="new-3">
+            <img class="other-new__img" src="./img/pages/news-page/new-3.jpg" alt="new-3">
             <div class="other-new__text">
               <h5 class="other-new__text-title">The master bedroom suite is phenomeny spacious</h5>
-              <p class="other-new__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              <p class="other-new__text-content text_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do
                 eiusmod.</p>
             </div>
           </article>
@@ -309,8 +355,8 @@
     <div class="sub-page__trial">
       <div class="trial__wrapper">
         <div class="trial__text">
-          <h4 class="trial__text-title">Try 30 Days Free Trial</h4>
-          <p class="trial__text-discription">No credit card reauired</p>
+          <h4 class="trial__text-title title_main">Try 30 Days Free Trial</h4>
+          <p class="trial__text-discription text_content">No credit card reauired</p>
         </div>
 
         <button class="button_type-blue"><span class="button_type-blue-label">Get Stared</span></button>
@@ -332,11 +378,12 @@
 
     <div class="footer__wrapper container">
 
-      <p class="footer__copyright">© 2018 Copyright, All Rights Reserved by AppSon</p>
+      <p class="footer__copyright text_content">© 2018 Copyright, All Rights Reserved by AppSon</p>
       <ul class="footer__reference-list">
-        <li class="reference-list__item"><a class="reference-list__link" href="#">Terms & Condition</a></li>
-        <li class="reference-list__item"><a class="reference-list__link" href="#">Privacy Policy</a></li>
-        <li class="reference-list__item"><a class="reference-list__link" href="#">Help</a></li>
+        <li class="reference-list__item"><a class="reference-list__link text_content" href="#">Terms & Condition</a>
+        </li>
+        <li class="reference-list__item"><a class="reference-list__link text_content" href="#">Privacy Policy</a></li>
+        <li class="reference-list__item"><a class="reference-list__link text_content" href="#">Help</a></li>
       </ul>
 
       <ul class="footer__social-list">

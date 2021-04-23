@@ -1,10 +1,10 @@
 .header {
   max-width: 1665px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 88px;
 }
 
 .header__logo {
@@ -56,4 +56,109 @@
 
 .header__sign-up:hover, .header__sign-up:focus {
   background-color: #0f4d99e3;
+}
+
+/* Mobile menu */
+.header__menu-burger{
+  display: none;
+}
+
+.burger__top-line{
+  transition: transform 1s 0.5s, fill 1s;
+}
+
+.header_menu_open .burger__top-line{
+  transform: translateY(8px);
+  fill: rgb(168, 135, 135);
+}
+
+
+.burger__middle-line{
+  transition: opacity 1s ;
+}
+
+.header_menu_open .burger__middle-line{
+  opacity: 0;
+}
+
+
+.burger__bottom-line{
+  transition: transform 1s 0.5s, fill 1s;
+}
+
+.header_menu_open .burger__bottom-line{
+  transform: translateY(-8px);
+  fill: rgb(168, 135, 135);
+}
+
+.header__mobile-wrapper{
+  position: fixed;
+  z-index: 1000;
+  padding-top: 185px;
+  top: -1000px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0.9);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  transform: translateY(-100%); 
+  transition: 1s transform, 0.8s opacity, 1.5s top;
+}
+
+.header_menu_open .header__mobile-wrapper{
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.header__mobile-navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-navigation__link{
+  display: block;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;  
+  transform: scale(0);
+  transition: transform 1s 1s;
+}
+
+
+.mobile-navigation__link:hover{
+  color: #0F7BFF;
+}
+
+.header_menu_open .mobile-navigation__link{
+  transform: scale(1);
+}
+
+.mobile-navigation__link:not(:last-child)::after{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #FFFFFF;
+  margin-left: 50%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+} 
+
+@media screen and (max-width: 860px) {
+  .navigation {
+    display: none;
+  }
+  .header__sign-up{
+    display: none;
+  }
+  .header__menu-burger{
+    display: flex;
+    z-index: 9999;
+  }
 }
